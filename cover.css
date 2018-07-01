@@ -1,0 +1,199 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a {
+  color: #59D5F7;
+}
+
+a:focus,
+a:hover {
+  color: #00B5A9;
+}
+
+/* Custom default button */
+.list-group,
+.list-group:hover,
+.list-group:focus,
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #000000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+}
+
+.list-group:hover,
+.list-group:focus,{
+  color: #00B5A9;
+  text-shadow: none;
+}
+
+.center-block {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  position: center;
+  color: #000000;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+}
+body {
+  color: #59D5F7;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+  color: #59D5F7;
+}
+
+
+/*
+ * Header
+ */
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #59D5F7;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+  color: #59D5F7;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+  color: #59D5F7;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #59D5F7;
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #00B5A9;
+  color: #00B5A9;
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #59D5F7;
+  border-bottom-color: #59D5F7;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .list-group {
+  font-weight: bold;
+  max-width: 300px;
+  border-color: #000000;
+}
+
+.cover .list-group .list-group-item{
+  color: #000000;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #59D5F7;
+  border-color: #000000;
+}
+
+.cover .list-group .list-group-item:hover,.cover .list-group .list-group-item:focus{
+  color: #00B5A9;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #010724;
+  border-color: #000000;
+}
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #59D5F7; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+    color: #59D5F7;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+    color: #59D5F7;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
